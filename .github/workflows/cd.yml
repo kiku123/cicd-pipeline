@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Pull Docker Image-
+    - name: Pull Docker Image
       run: sudo docker pull kiku12/cicd-pipeline:latest
     - name: Delete Old Docker container
       run: sudo docker rm -f cicd-pipeline-container || true
